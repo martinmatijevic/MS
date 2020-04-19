@@ -1,0 +1,54 @@
+Pravopis, jezik i tipografija
+=============================
+
+Jesu li sve riječi napisane u skladu s ortografijom hrvatskog standardnog jezika? Imaju li rečenice smislenu gramatičku 
+strukturu? Je li dokument čitljiv? Jesu li na odgovarajući način istaknuti definirani pojmovi, strane riječi, naslovi, 
+liste,...? Koriste li se mogućnosti Markdowna na odgovarajući način?
+
+Primjeri dodjele bodova:
+
+0 Na mnogim mjestima nije uopće jasno što se želi reći.
+
+1 Ima dosta tipfelera, ne mari se puno za označavanje u Markdownu...
+
+2 Sve riječi i rečenice napisane pravilno, osnovne kategorije ispravno označene.
+
+3 Impresivan stil pisanja, već izdaleka je jasno što je što, užitak je gledati dokument.
+
+
+Python i Jupyter
+================
+
+Je li kôd čitljiv? Jesu li imena varijabli semantički ispravna i može li se iz imena zaključiti što 
+varijabla predstavlja? Koriste li se Pythonovi konstrukti na odgovarajući način? Je li duplikacija 
+koda odgovarajuće isfaktorirana (eliminirana)? Jesu li odgovarajuće korišteni tipovi ćelija (Markdown, 
+Python, grafičke ćelije, HTML, LaTeX...)?
+
+Primjeri dodjele bodova:
+
+0 Warninzi, čudni izuzetci u graničnim slučajevima, kôd pisan zbrda-zdola...
+
+1 Ima duplikacije koda koja bi se mogla lako eliminirati, tekst (koji nije striktno vezan uz pojedinu liniju koda) pisan u komentarima umjesto u Markdownu...
+
+2 Suvislo i jasno nazvane varijable, korišten LaTeX (dolari) za matematičke oznake, code environment (obrnuti navodnici) za isječke koda unutar teksta...
+
+3 Kôd koji se može čitati kao priča, pisan u skladu s PEP8, PEP20 i PEP257. Markdown i markup korišteni do granica svojih mogućnosti.
+
+
+Organizacija i tijek dokumenta
+==============================
+
+Jesu li naslovi takvi da dobro opisuju strukturu dokumenta (*outline*)? Je li priča u osnovi razumljiva (npr. dobrom studentu koji 
+je završio preddiplomski studij kod nas) bez previše oslanjanja na vanjske izvore? Imaju li slike smisla i jesu li vizualno atraktivne? 
+Jesu li sekcije (dijelovi između naslova) bez prevelikih oscilacija u duljini? Skače li dokument s teme na temu bez nekog reda, ili 
+miješa razine detaljnosti (npr. česta je greška da je uvod strašno detaljan, a onda pred kraj sve zbrzano)? 
+
+Primjeri dodjele bodova:
+
+0 Nema naslova, irelevantne slike, skakanje između tema...
+
+1 Slike nabacane na jedno mjesto, generički naslovi ('uvod', 'zaključak' i slično), nerazumljiva priča
+
+2 Dobro strukturiran dokument i outline, popis referenci, držanje slične razine detaljnosti kroz dokument
+
+3 Izuzetno zanimljiva priča koja se čita s užitkom. Dokument koji bih želio/željela pročitati i da nije za bodove! :-)
