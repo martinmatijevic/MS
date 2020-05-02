@@ -1,0 +1,91 @@
+\documentclass[10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{latexsym} %za valovitu strelicu
+\usepackage[croatian]{babel}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\usepackage{marvosym}
+\usepackage[unicode]{hyperref}
+\usepackage{thmtools}
+\declaretheorem{teorem}
+\declaretheorem[sibling=teorem]{korolar}
+\declaretheorem[sibling=teorem]{propozicija}
+\declaretheorem[style=definition,sibling=teorem,qed=$\checkmark$]{definicija}
+
+\begin{document}
+
+\title{\Huge\LaTeX}
+\subtitle{Druga zadaća}
+\author{Martin Matijević}
+\date{Zagreb, \today}
+\maketitle
+\tableofcontents
+
+\section{Reference}
+Telefon~\eqref{eq:referenca} je fora! Molim Vas nemojte odmah preskočiti na kraj~\ref{sec:kraj}.
+
+\section{Relacije}
+$\not\prec$ izgleda isto kao i $\nprec$, ali $\nvDash$ je puno ružniji ovako $\not\vDash$.
+
+\section{Valovita strelica}
+Ova $\leadsto$, a ne ova $\rightsquigarrow$?
+
+\section{Rastav riječi}
+Tu ide par najdužih riječi u hrvatskom jeziku - elektrokardiografija, \textit{deprofesionalizirati}, najneindustrijaliziranija, gamaradioaktivnost, elektrostimulacija, \textit{prijestolonasljednikovica}, prenezaposlenost...
+\par\noindent
+Tu ide par najdužih riječi u hrvatskom jeziku - elektrokardiografija, \textit{dep\-ro\-fe\-si\-o\-na\-li\-zi\-ra\-ti}, najneindustrijaliziranija, gamaradioaktivnost, elektrostimulacija, \textit{prijes\-to\-lo\-nas\-ljed\-ni\-ko\-vi\-ca}, prenezaposlenost...
+\par\noindent
+Tu ide par najdužih riječi u hrvatskom jeziku - elektrokardiografija, \textit{dep\-ro\-fe\-si\-o\-na\-li\-zi\-ra\-ti}, najneindustrijaliziranija, gamaradioaktivnost, elektrostimulacija, \textit{prijestolonasljednikovica}, prenezaposlenost...
+\par\noindent
+Tu ide par najdužih riječi u hrvatskom jeziku - elektrokardiografija, \textit{deprofesionalizirati}, najneindustrijaliziranija, gamaradioaktivnost, elektrostimulacija, \textit{prijes\-to\-lo\-nas\-ljed\-ni\-ko\-vi\-ca}, prenezaposlenost...
+
+\section{Definicije}
+\begin{definicija}
+Za formulu $F$ kažemo da je \textbf{tautologija} (ili \textbf{valjana formula}) ako za svaku interpretaciju $I$ vrijedi $I(F) = 1$. Kažemo da je \textbf{antitautologija} ako za svaku interpretaciju $I$ vrijedi $I(F) = 0$.
+\end{definicija}
+\begin{definicija}
+Neka je $S$ skup formula te $I$ interpretacija. Pišemo $I(S) = 1$ ($I(S) = 0$) ako za svaku formulu $A \in S$ vrijedi $I(A) = 1$ ($I(A) = 0$). Ako to ne vrijedi, pišemo $I(S) \not= 1$ ($I(S) \not= 0$).
+\end{definicija}
+
+\section{Matematičke trotočke i pod-okoline}
+\begin{equation}
+I_n=\left[\begin{array}{cccc}
+1 & 0 & \cdots & 0 \\
+0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1
+\end{array}\right]
+,\quad\quad\quad\quad\quad\quad
+\begin{gathered}
+\prod=\prod\prod\dotsi\prod\\
+\sum=\sum\sum\dotsi\sum 
+\end{gathered}
+\end{equation}
+
+\section{Kvadratna jednadžba}
+\begin{equation}
+x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+\section{Operatori sa granicama pored/iznad/ispod}
+\begin{equation}\label{eq:referenca}
+\begin{gathered}
+\sum\nolimits_{i=1}^{5}i^i=3413
+\quad
+\int\nolimits_{-\frac{\pi}{2}}^\pi{\sin x}\,\mathrm{d}x = 1
+\end{gathered}\tag{\Telefon}
+\end{equation}
+\begin{equation}
+\begin{gathered}
+\sum\limits_{i=1}^{5}i^i=3413
+\quad
+\int\limits_{-\frac{\pi}{2}}^\pi{\sin x}\,\mathrm{d}x = 1
+\end{gathered}
+\end{equation}
+
+\section{Kraj}\label{sec:kraj}
+Ovo je kraj, hvala na pažnji. \Smiley
+
+\end{document}
+
