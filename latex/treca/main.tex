@@ -1,0 +1,124 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{latexsym} %za valovitu strelicu
+\usepackage[croatian]{babel}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\usepackage{marvosym}
+\usepackage[unicode]{hyperref}
+\usepackage{thmtools}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{graphicx}
+\declaretheorem{teorem}
+\declaretheorem[sibling=teorem]{korolar}
+\declaretheorem[sibling=teorem]{propozicija}
+\declaretheorem[style=definition,sibling=teorem,qed=$\checkmark$]{definicija}
+\newcommand{\BI}[1]{\textbf{\textit{#1}}}
+
+\begin{document}
+
+\title{\Huge\LaTeX}
+\subtitle{Treća zadaća}
+\author{Martin Matijević}
+\date{Zagreb, \today}
+\maketitle
+\tableofcontents
+
+\section{Teorem sa dokazom}
+\BI{Teorem s imenom i dokazom} (ni teorem ni dokaz ne moraju imati matematičkog smisla); dokaz mora biti takav da je nužno koristiti \verb!\qedhere! da ne bi oznaka za kraj dokaza završila sama u retku.
+\begin{teorem}[Prvi teorem]
+Ovo je teorem.
+\end{teorem}
+\begin{proof}
+\begin{equation*}
+\int\nolimits_{-\frac{\pi}{2}}^\pi{\sin x}\,\mathrm{d}x = 1 \text. \qedhere
+\end{equation*}
+\end{proof}
+
+
+\section{Fontovi}
+Riječ na engleskom jeziku u \textsl{slanted} fontu, \emph{semantički naglašeni dio teksta}, te barem jednu \verb!\math! naredbu za promjenu matematičkog $\mathbb{FONTA}$.
+
+\section{Matrica, tablica i slika}
+Barem jednu \BI{matricu} (napisanu pomoću array ili pomoću matrix), barem jednu \BI{tablicu} s ćelijom kroz više stupaca i u kojoj horizontalna linija odvaja zaglavlje od ostatka tablice, te barem jednu skaliranu \BI{sliku} u floating okolini s natpisom (caption). [Ne zaboravite predati i sliku!].
+\begin{gather*}
+A=\begin{bmatrix}
+2   &  3    &  1    & 2 \\
+5   & a-1   &  0    & 2 \\
+1   &  2    & b+1   & 2 \\
+0   &  1    &  2    & c
+\end{bmatrix}\qquad
+\text{
+\begin{tabular}{lclll}
+\multicolumn{3}{c}{ivan}   & \multicolumn{2}{c}{marko} \\ \hline
+1 & \multirow{3}{*}{4} & 2 & a           & b           \\
+3 &                    & 5 & c           & d           \\
+6 &                    & 7 & e           & f          
+\end{tabular}}
+\end{gather*}
+\begin{figure}[h]
+\caption{More u \Heart}
+\begin{center}
+\includegraphics[scale=0.6]{slikica}
+\end{center}
+\end{figure}
+
+\section{Naredba s argumentom}
+Barem jednu vlastitu \BI{naredbu} koja prima argument, korištenu na više mjesta u dokumentu (sami razmislite što koristite često).
+
+\section{Liste}
+\BI{Uređena lista A:}
+\begin{enumerate}
+    \item jedan
+    \begin{enumerate}
+        \item prvi unutra
+        \item drugi unutra
+    \end{enumerate}
+    \item dva
+    \item tri
+\end{enumerate}
+\BI{Definicijska lista:}
+\begin{itemize}
+    \item jedan
+    \item dva
+    \item tri
+\end{itemize}
+\BI{Uređena lista B:}
+\begin{enumerate}
+    \item jedan
+    \begin{enumerate}
+        \item prvi unutra
+        \item drugi unutra
+        \begin{enumerate}
+            \item prvi UNUTRA
+            \item drugi UNUTRA
+        \end{enumerate}
+        \item treći unutra
+    \end{enumerate}
+    \item dva
+    \item tri
+\end{enumerate}
+
+\section{Prijedlog zadatka}
+\BI{Prijedlog zadatka} za pisanu provjeru iz {\LaTeX}a. Treba imati dovoljno elemenata da se može ocijeniti s 0 do 5 bodova.
+
+\begin{equation*}
+    \begin{split}
+        \phi &= \phi_A\cos\left(\frac{\sqrt{\omega_0+2\Omega}-\omega_0}{2}t\right)\cos\left(\frac{\sqrt{\omega_0+2\Omega}+\omega_0}{2}t\right)= \\
+        &= \left\{ \overline{\omega}= \frac{\sqrt{\omega_0+2\Omega}+\omega_0}{2} \text{, } \Delta \omega =  \sqrt{\omega_0+2\Omega}-\omega_0 \right\}= \\
+        &= \phi_A\cos\left(\frac{\Delta \omega}{2}t\right)\cos(\overline{\omega}t)
+    \end{split}
+\end{equation*}
+
+Bodovanje:
+\begin{itemize}
+    \item 1 bod za \verb!equation*! i \verb!split!
+    \item 1 bod za pravilne veličine zagrada
+    \item 1 bod za poravnavanje sa \&
+    \item 1 bod za \verb!\cos!, \verb!\frac! i \verb!\sqrt!
+    \item 1 bod za grčka slova
+\end{itemize}
+
+\end{document}
